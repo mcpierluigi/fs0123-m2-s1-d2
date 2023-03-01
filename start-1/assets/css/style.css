@@ -20,30 +20,32 @@ hr {
 .top {
   line-height: 1;
   position: fixed;
-  right: -18px;
-  z-index: 999;
+  right: -1rem;
 }
 
 .social {
-  top: 16px;
+  top: 1rem;
 }
 
 .top {
-  bottom: 16px;
+  bottom: 1rem;
 }
 
 @media screen and (max-width: 700px) {
   .social {
     top: unset;
-    bottom: 96px;
+    bottom: 6rem;
   }
 }
 
 .social a,
 .top {
-  color: #f76168;
   font-size: 2rem;
   display: block;
+}
+
+.top a {
+  color: coral;
 }
 
 .social a {
@@ -56,12 +58,10 @@ hr {
 
 .top .far,
 .social .far {
-  background: #ffffffa1;
+  background: #ffffffb6;
   backdrop-filter: blur(2px);
-  line-height: 0.8;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
-  padding: 16px;
+  padding: 1rem;
   border: 3px solid white;
 }
 
