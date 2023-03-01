@@ -16,6 +16,55 @@ hr {
   display: none;
 } /* rimuove l'elemento */
 
+.social,
+.top {
+  line-height: 1;
+  position: fixed;
+  right: -18px;
+  z-index: 999;
+}
+
+.social {
+  top: 16px;
+}
+
+.top {
+  bottom: 16px;
+}
+
+@media screen and (max-width: 700px) {
+  .social {
+    top: unset;
+    bottom: 96px;
+  }
+}
+
+.social a,
+.top {
+  color: #f76168;
+  font-size: 2rem;
+  display: block;
+}
+
+.social a {
+  color: rgb(45, 101, 185);
+}
+
+.social a:first-child {
+  margin-bottom: 1rem;
+}
+
+.top .far,
+.social .far {
+  background: #ffffffa1;
+  backdrop-filter: blur(2px);
+  line-height: 0.8;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+  padding: 16px;
+  border: 3px solid white;
+}
+
 /* HEADER */
 header {
   background: rgb(0, 160, 198);
